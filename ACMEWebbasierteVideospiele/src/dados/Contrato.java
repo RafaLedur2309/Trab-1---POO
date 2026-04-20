@@ -1,13 +1,13 @@
 public class Contrato{
     private int id;
     private int periodo;
-    private Cliente cliente;
+    Jogo jogo;
 
 
-    public Contrato(int id, int periodo, Cliente cliente) {
+    public Contrato(int id, int periodo, Jogo jogo) {
         this.id = id;
         this.periodo = periodo;
-        this.cliente = cliente;
+        this.jogo = jogo;
     }
     
 }
