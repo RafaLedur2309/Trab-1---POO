@@ -2,10 +2,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ACMESpiele{
-    public void executar() {
-        private ArrayList<Cliente> clientes;
-        private Scanner in;
-
+    private ArrayList<Cliente> clientes;
+    private Scanner in;
         public ACMESpiele(){
             in = new Scanner(System.in);
             this.clientes  = new ArrayList<Cliente>();
@@ -32,11 +30,12 @@ public class ACMESpiele{
             String email = in.nextLine();
             in.nextLine();
         }
-
+        Cliente cliente = new Cliente(num, nome, email);
+        System.out.println("cliente cadastrado: " +num+ ";" +nome+ ";" +email);
         } 
         }
 
     }
 
 
-}
+
