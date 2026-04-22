@@ -1,3 +1,5 @@
+package app;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -29,9 +31,13 @@ public class ACMESpiele{
             System.out.println("digite o seu email: ");
             String email = in.nextLine();
             in.nextLine();
+            System.out.println("digite o seu cpf: ");
+            int cpf = in.nextInt();
+            in.nextLine();
         }
-        Cliente cliente = new Cliente(num, nome, email);
-        System.out.println("cliente cadastrado: " +num+ ";" +nome+ ";" +email);
+        Individual cliente = new Cliente(num, nome, email, cpf);
+        clientes.add(cliente);
+        System.out.println("cliente cadastrado: " +num+ ";" +nome+ ";" +email+ ";" +cpf);
         } 
         }
 

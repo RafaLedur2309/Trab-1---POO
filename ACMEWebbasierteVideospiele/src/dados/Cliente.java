@@ -1,8 +1,17 @@
-abstract class Cliente{
+package dados;
+
+public abstract class Cliente{
     private int numero;
     private String nome;
     private String email;
     Contrato contrato;
+
+    public Cliente(int numero, String nome, String email, Contrato contrato) {
+        this.numero = numero;
+        this.nome = nome;
+        this.email = email;
+        this.contrato = contrato;
+    }
 
     public int getNumero() {
         return this.numero;
